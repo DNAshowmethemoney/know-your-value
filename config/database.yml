@@ -1,0 +1,21 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  host: localhost
+  database: know_your_value_development
+  username: <%= ENV['DATABASE_USERNAME'] %> 
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: <%= ENV['SOCKET'] %>
+
+
+test:
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  host: localhost
+  database: know_your_value_test
+  username: <%= ENV['DATABASE_USERNAME'] %> 
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: <%= ENV['SOCKET'] %>
+
