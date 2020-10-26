@@ -3,7 +3,7 @@ development:
   encoding: utf8
   pool: 5
   host: localhost
-  database: know_your_value_development
+  database: knowyourvalue_dev
   username: <%= ENV['DATABASE_USERNAME'] %> 
   password: <%= ENV['DATABASE_PASSWORD'] %>
   socket: <%= ENV['SOCKET'] %>
@@ -14,7 +14,7 @@ test:
   encoding: utf8
   pool: 5
   host: localhost
-  database: know_your_value_test
+  database: knowyourvalue_test
   username: <%= ENV['DATABASE_USERNAME'] %> 
   password: <%= ENV['DATABASE_PASSWORD'] %>
   socket: <%= ENV['SOCKET'] %>
