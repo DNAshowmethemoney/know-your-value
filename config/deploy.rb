@@ -6,14 +6,14 @@ set :repo_url, "https://github.com/DNAshowmethemoney/know-your-value.git"
 
 
 # Default branch is :master
-ask :main, `git rev-parse --abbrev-ref HEAD`.chomp
+set :branch, 'main'
+ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Deploy to the user's home directory
 set :deploy_to, "/home/deploy/#{fetch :application}"
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
-set :scm, :git
 
 # You can configure the Airbrussh format using :format_options.
 # These are the defaults.
