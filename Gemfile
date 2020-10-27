@@ -30,9 +30,6 @@ group :development, :test do
   gem 'rails-controller-testing', '~> 1.0', '>= 1.0.5'
 end
 
-group :production do
-  gem 'pg', '~> 1.2', '>= 1.2.3'
-end
 
 group :development do
   gem 'brakeman', '~> 4.8', '>= 4.8.2'
